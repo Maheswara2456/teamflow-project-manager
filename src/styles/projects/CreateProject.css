@@ -1,0 +1,88 @@
+.create-project-page{
+  width:100%;
+  min-height:100vh;
+  background:#edf3ef;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+.create-project-card{
+  width:100%;
+  max-width:700px;
+  background:white;
+  border-radius:30px;
+  padding:40px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.06);
+}
+
+.create-project-card h1{
+  font-size:42px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:10px;
+}
+
+.create-project-card p{
+  color:#64748b;
+  margin-bottom:30px;
+}
+
+.create-input-group{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:25px;
+}
+
+.create-input-group label{
+  font-size:15px;
+  font-weight:700;
+  color:#334155;
+}
+
+.create-input-group input,
+.create-input-group textarea,
+.create-input-group select{
+  width:100%;
+  padding:18px;
+  border-radius:18px;
+  border:1px solid #dbe4dc;
+  background:#f8fbf9;
+  font-size:16px;
+  outline:none;
+}
+
+.create-input-group textarea{
+  min-height:140px;
+  resize:none;
+}
+
+.create-project-buttons{
+  display:flex;
+  justify-content:flex-end;
+  gap:20px;
+  margin-top:20px;
+}
+
+.cancel-project-btn{
+  padding:15px 24px;
+  border:none;
+  border-radius:16px;
+  background:#e2e8f0;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.create-project-btn{
+  padding:15px 24px;
+  border:none;
+  border-radius:16px;
+  background:#7a9b79;
+  color:white;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+}

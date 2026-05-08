@@ -1,0 +1,366 @@
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.sidebar {
+  width: 92px;
+
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 18px 14px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #edf2ee 0%,
+      #e7ede9 50%,
+      #e3eae5 100%
+    );
+
+  border-right:
+    1px solid rgba(140, 160, 150, 0.12);
+
+  box-shadow:
+    6px 0 30px rgba(15, 23, 42, 0.04);
+
+  backdrop-filter: blur(18px);
+
+  transition: all 0.35s ease;
+
+  overflow: hidden;
+
+  z-index: 1000;
+}
+
+/* ======================================================
+   OPEN
+====================================================== */
+
+.sidebar.open {
+  width: 255px;
+}
+
+/* ======================================================
+   TOP
+====================================================== */
+
+.sidebar-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 42px;
+}
+
+/* ======================================================
+   MENU BUTTON
+====================================================== */
+
+.menu-btn {
+  width: 54px;
+  height: 54px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  border:
+    1px solid rgba(180,190,185,0.22);
+
+  color: #61786d;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    0 4px 14px rgba(15,23,42,0.05);
+}
+
+.menu-btn:hover {
+  background:
+    rgba(255,255,255,0.95);
+
+  transform: rotate(90deg);
+}
+
+/* ======================================================
+   BRAND
+====================================================== */
+
+.sidebar-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #cad7d0,
+      #dfe7e2
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #64786f;
+
+  font-size: 16px;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.8),
+    0 3px 8px rgba(15,23,42,0.05);
+}
+
+.sidebar-logo {
+  font-size: 27px;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  color: #46545d;
+
+  white-space: nowrap;
+}
+
+/* ======================================================
+   LINKS
+====================================================== */
+
+.sidebar-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  flex: 1;
+}
+
+/* ======================================================
+   LINK
+====================================================== */
+
+.sidebar-links a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  text-decoration: none;
+
+  color: #64707c;
+
+  padding: 15px 18px;
+
+  border-radius: 18px;
+
+  transition: all 0.25s ease;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  position: relative;
+}
+
+/* ======================================================
+   ICON
+====================================================== */
+
+.sidebar-links a svg {
+  min-width: 21px;
+}
+
+/* ======================================================
+   HOVER
+====================================================== */
+
+.sidebar-links a:hover {
+  background:
+    rgba(255,255,255,0.68);
+
+  color: #111827;
+
+  transform: translateX(3px);
+
+  box-shadow:
+    0 4px 10px rgba(15,23,42,0.04);
+}
+
+/* ======================================================
+   ACTIVE
+====================================================== */
+
+.sidebar-links a.active {
+  background:
+    linear-gradient(
+      135deg,
+      #c9d6cf,
+      #dce5df
+    );
+
+  color: #111827;
+
+  border:
+    1px solid rgba(140,160,150,0.15);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.7),
+    0 4px 12px rgba(15,23,42,0.05);
+}
+
+/* ======================================================
+   LINK TEXT
+====================================================== */
+
+.link-text {
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+/* ======================================================
+   BOTTOM
+====================================================== */
+
+.sidebar-bottom {
+  padding-top: 18px;
+}
+
+/* ======================================================
+   LOGOUT
+====================================================== */
+
+.logout-btn {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  border: none;
+
+  padding: 15px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #dccbc4,
+      #e7dad4
+    );
+
+  color: #6d554b;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    0 4px 12px rgba(15,23,42,0.04);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #d4bfb6,
+      #e0d0ca
+    );
+}
+
+/* ======================================================
+   COLLAPSED
+====================================================== */
+
+.sidebar:not(.open) .sidebar-logo,
+.sidebar:not(.open) .link-text,
+.sidebar:not(.open) .logout-text,
+.sidebar:not(.open) .brand-icon {
+  display: none;
+}
+
+/* ======================================================
+   COLLAPSED LINKS
+====================================================== */
+
+.sidebar:not(.open) .sidebar-links a {
+  justify-content: center;
+
+  padding: 18px 0;
+}
+
+/* ======================================================
+   COLLAPSED LOGOUT
+====================================================== */
+
+.sidebar:not(.open) .logout-btn {
+  justify-content: center;
+
+  padding: 16px 0;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    left: -100%;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}

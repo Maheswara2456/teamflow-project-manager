@@ -1,0 +1,207 @@
+/* =======================================================
+   HERO SECTION
+======================================================= */
+
+.projects-topbar {
+
+  width: 100%;
+
+  min-height: 320px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding:
+    50px
+    55px;
+
+  border-radius: 34px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.72),
+      rgba(245,248,245,0.92)
+    );
+
+  backdrop-filter: blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,0.8);
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+/* =======================================================
+   LEFT
+======================================================= */
+
+.projects-topbar-left {
+
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* LABEL */
+
+.projects-label {
+
+  width: fit-content;
+
+  padding:
+    10px
+    18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(132,145,132,0.14);
+
+  color: #647164;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+/* TITLE */
+
+.projects-topbar-left h1 {
+
+  font-size: 68px;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  color: #0f172a;
+
+  letter-spacing: -2px;
+
+  word-break: break-word;
+}
+
+/* TEXT */
+
+.projects-topbar-left p {
+
+  max-width: 650px;
+
+  font-size: 22px;
+
+  line-height: 1.7;
+
+  color: #64748b;
+
+  font-weight: 500;
+}
+
+/* =======================================================
+   RIGHT
+======================================================= */
+
+.projects-topbar-right {
+
+  width: 340px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+/* SEARCH */
+
+.projects-topbar-right input {
+
+  width: 100%;
+
+  height: 68px;
+
+  border: none;
+
+  outline: none;
+
+  padding:
+    0
+    26px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,0.75);
+
+  border:
+    1px solid rgba(255,255,255,0.8);
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  color: #0f172a;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.04);
+}
+
+.projects-topbar-right input::placeholder {
+
+  color: #94a3b8;
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width: 1100px) {
+
+  .projects-topbar {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .projects-topbar-right {
+
+    width: 100%;
+  }
+
+  .projects-topbar-right input {
+
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .projects-topbar {
+
+    padding:
+      35px
+      24px;
+  }
+
+  .projects-topbar-left h1 {
+
+    font-size: 46px;
+  }
+
+  .projects-topbar-left p {
+
+    font-size: 17px;
+  }
+}

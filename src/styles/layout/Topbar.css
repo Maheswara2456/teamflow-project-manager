@@ -1,0 +1,313 @@
+/* ======================================================
+   TOPBAR
+====================================================== */
+
+.topbar {
+  position: fixed;
+
+  top: 0;
+  left: 95px;
+
+  width: calc(100% - 95px);
+
+  height: 78px;
+
+  padding: 0 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(46,58,54,0.96),
+      rgba(55,68,64,0.92)
+    );
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.06);
+
+  box-shadow:
+    0 4px 18px rgba(0,0,0,0.08);
+
+  z-index: 500;
+
+  transition: all 0.35s ease;
+}
+
+/* ======================================================
+   EXPANDED
+====================================================== */
+
+.topbar.expanded {
+  left: 260px;
+
+  width: calc(100% - 260px);
+}
+
+/* ======================================================
+   LEFT
+====================================================== */
+
+.topbar-left {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.topbar-left h1 {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  color: #ffffff;
+
+  line-height: 1;
+}
+
+.topbar-left p {
+  margin-top: 6px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: rgba(255,255,255,0.65);
+}
+
+/* ======================================================
+   RIGHT
+====================================================== */
+
+.topbar-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+/* ======================================================
+   SEARCH
+====================================================== */
+
+.search-box {
+  width: 280px;
+
+  height: 46px;
+
+  padding: 0 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  border-radius: 14px;
+
+  color: rgba(255,255,255,0.55);
+
+  transition: 0.25s ease;
+}
+
+.search-box:hover {
+  background:
+    rgba(255,255,255,0.11);
+}
+
+.search-box input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: white;
+}
+
+.search-box input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+/* ======================================================
+   ICON BUTTON
+====================================================== */
+
+.icon-btn {
+  width: 46px;
+
+  height: 46px;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-radius: 14px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid rgba(255,255,255,0.05);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: rgba(255,255,255,0.72);
+
+  transition: all 0.25s ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-2px);
+
+  background:
+    rgba(255,255,255,0.14);
+}
+
+/* ======================================================
+   PROFILE
+====================================================== */
+
+.profile-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 6px 10px;
+
+  border: none;
+
+ outline: none;
+
+  background: transparent;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.profile-box:hover {
+  background:
+    rgba(255,255,255,0.08);
+}
+
+/* ======================================================
+   AVATAR
+====================================================== */
+
+.profile-avatar {
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  border:
+    2px solid rgba(255,255,255,0.22);
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-avatar img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* ======================================================
+   PROFILE INFO
+====================================================== */
+
+.profile-info {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  text-align: left;
+}
+
+.profile-info h4 {
+  font-size: 15px;
+
+  font-weight: 700;
+
+  color: white;
+
+  margin: 0;
+}
+
+.profile-info span {
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: rgba(255,255,255,0.55);
+
+  margin-top: 2px;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 900px) {
+
+  .search-box {
+    display: none;
+  }
+
+  .topbar {
+    padding: 0 18px;
+  }
+
+  .topbar-left h1 {
+    font-size: 24px;
+  }
+
+  .profile-info {
+    display: none;
+  }
+}

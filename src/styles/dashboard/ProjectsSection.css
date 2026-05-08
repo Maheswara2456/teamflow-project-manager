@@ -1,0 +1,70 @@
+/* =======================================================
+   PROJECTS SECTION
+======================================================= */
+
+.projects-section {
+  position: relative;
+
+  overflow: visible;
+
+  padding: 28px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.72),
+      rgba(244,248,246,0.88)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.82);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.05),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+/* =======================================================
+   LIGHT EFFECT
+======================================================= */
+
+.projects-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: -120px;
+  right: -120px;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(193,214,205,0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+/* =======================================================
+   PROJECT LIST
+======================================================= */
+
+.projects-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}

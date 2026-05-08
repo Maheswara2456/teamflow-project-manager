@@ -1,0 +1,423 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.project-hero {
+  width: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 28px;
+
+  padding: 28px 32px;
+
+  border-radius: 32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.92),
+      rgba(234,244,236,0.96)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 12px 40px rgba(15,23,42,0.06);
+
+  margin-top: 0;
+}
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.project-hero-glow {
+  position: absolute;
+
+  top: -120px;
+  right: -80px;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(124,156,124,0.16),
+      transparent 72%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.project-hero-left {
+  flex: 1;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 22px;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.project-hero-icon {
+  width: 72px;
+  height: 72px;
+
+  min-width: 72px;
+
+  border-radius: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 34px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff7d6,
+      #ffe7a3
+    );
+
+  box-shadow:
+    0 10px 24px rgba(255,213,79,0.16);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.project-hero-content {
+  flex: 1;
+}
+
+.project-hero-content h1 {
+  font-size: 42px;
+
+  line-height: 1.1;
+
+  font-weight: 900;
+
+  letter-spacing: -1.4px;
+
+  color: #0f172a;
+
+  margin-bottom: 18px;
+
+  max-width: 820px;
+}
+
+.project-hero-content p {
+  max-width: 760px;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+
+  margin-bottom: 24px;
+}
+
+/* =========================================================
+   META
+========================================================= */
+
+.project-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.project-meta span {
+  padding: 11px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  border:
+    1px solid rgba(232,236,233,0.9);
+
+  color: #607065;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 4px 14px rgba(15,23,42,0.04);
+}
+
+/* =========================================================
+   STATUS COLORS
+========================================================= */
+
+.project-status-badge.active {
+  color: #16a34a;
+}
+
+.project-status-badge.completed {
+  color: #6d5dfc;
+}
+
+.project-status-badge.pending {
+  color: #f59e0b;
+}
+
+.project-status-badge.inprogress {
+  color: #ef4444;
+}
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.project-hero-right {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 24px;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.project-hero-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+}
+
+.project-hero-buttons button {
+  border: none;
+
+  cursor: pointer;
+
+  padding: 13px 20px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f5f7f6
+    );
+
+  color: #475467;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: 0.28s ease;
+
+  box-shadow:
+    0 8px 18px rgba(15,23,42,0.05);
+}
+
+.project-hero-buttons button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 24px rgba(15,23,42,0.08);
+}
+
+/* =========================================================
+   ADD TASK BUTTON
+========================================================= */
+
+.add-task-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #7c9a7d,
+      #5f7d62
+    ) !important;
+
+  color: white !important;
+
+  box-shadow:
+    0 12px 24px rgba(95,125,98,0.22) !important;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.project-progress-circle {
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow:
+    0 14px 34px rgba(15,23,42,0.08);
+}
+
+.circle {
+  width: 122px;
+  height: 122px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f7faf8
+    );
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.95);
+}
+
+.circle h2 {
+  font-size: 34px;
+
+  font-weight: 900;
+
+  color: #0f172a;
+
+  margin-bottom: 4px;
+}
+
+.circle p {
+  color: #64748b;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .project-hero {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .project-hero-right {
+    width: 100%;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project-hero {
+    padding: 24px;
+
+    border-radius: 26px;
+  }
+
+  .project-hero-left {
+    flex-direction: column;
+  }
+
+  .project-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .project-hero-content p {
+    font-size: 15px;
+  }
+
+  .project-hero-right {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .project-progress-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circle {
+    width: 104px;
+    height: 104px;
+  }
+
+  .circle h2 {
+    font-size: 26px;
+  }
+
+  .project-hero-buttons {
+    width: 100%;
+  }
+}

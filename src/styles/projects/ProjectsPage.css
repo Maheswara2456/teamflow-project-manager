@@ -1,0 +1,97 @@
+/* =======================================================
+   PAGE LAYOUT
+======================================================= */
+
+.projects-page-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef3ee 0%,
+      #edf2ec 50%,
+      #e8efea 100%
+    );
+}
+
+/* =======================================================
+   MAIN
+======================================================= */
+
+.projects-main {
+  flex: 1;
+
+  margin-left: 92px;
+
+  transition: all 0.35s ease;
+
+  min-height: 100vh;
+}
+
+.projects-main.expanded {
+  margin-left: 255px;
+}
+
+/* =======================================================
+   CONTENT
+======================================================= */
+
+.projects-page-content {
+  width: 100%;
+
+  padding:
+    120px
+    32px
+    40px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* =======================================================
+   HERO WRAPPER
+======================================================= */
+
+.projects-hero-wrapper {
+  width: 100%;
+}
+
+/* =======================================================
+   FILTER WRAPPER
+======================================================= */
+
+.projects-filter-wrapper {
+  width: 100%;
+}
+
+/* =======================================================
+   GRID WRAPPER
+======================================================= */
+
+.projects-grid-wrapper {
+  width: 100%;
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width: 768px) {
+
+  .projects-main,
+  .projects-main.expanded {
+    margin-left: 0;
+  }
+
+  .projects-page-content {
+
+    padding:
+      100px
+      18px
+      30px;
+  }
+}

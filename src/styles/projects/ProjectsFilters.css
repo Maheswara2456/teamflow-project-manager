@@ -1,0 +1,96 @@
+/* =======================================================
+   FILTERS WRAPPER
+======================================================= */
+
+.projects-filters {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+
+/* =======================================================
+   BUTTON
+======================================================= */
+
+.filter-btn {
+  border: none;
+
+  outline: none;
+
+  cursor: pointer;
+
+  padding:
+    14px
+    24px;
+
+  border-radius: 16px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #5d6c5d;
+
+  background:
+    rgba(255,255,255,0.6);
+
+  border:
+    1px solid rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 4px 14px rgba(15,23,42,0.04);
+
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+
+  background:
+    rgba(255,255,255,0.82);
+}
+
+/* ACTIVE */
+
+.filter-btn.active {
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8ba18b,
+      #6f8570
+    );
+
+  box-shadow:
+    0 10px 24px rgba(111,133,112,0.28);
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width: 768px) {
+
+  .projects-filters {
+    gap: 12px;
+  }
+
+  .filter-btn {
+    padding:
+      12px
+      18px;
+
+    font-size: 13px;
+  }
+}

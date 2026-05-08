@@ -1,0 +1,392 @@
+/* =======================================================
+   ANALYTICS SECTION
+======================================================= */
+
+.analytics-section {
+  margin-top: 22px;
+
+  padding: 28px;
+
+  border-radius: 30px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.72),
+      rgba(240,246,242,0.92)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.82);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 10px 28px rgba(15,23,42,0.05),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+/* =======================================================
+   GLOW EFFECT
+======================================================= */
+
+.analytics-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: -120px;
+  right: -120px;
+
+  width: 240px;
+  height: 240px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(193,214,205,0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.analytics-section .section-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+/* =======================================================
+   LABEL
+======================================================= */
+
+.analytics-section .section-label {
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(205,217,210,0.65);
+
+  color: #6c7b73;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+/* =======================================================
+   TITLE
+======================================================= */
+
+.analytics-section .section-header h2 {
+  font-size: 28px;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  color: #111827;
+}
+
+/* =======================================================
+   BUTTON
+======================================================= */
+
+.analytics-section .section-btn {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 15px;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  border:
+    1px solid rgba(190,200,194,0.42);
+
+  color: #526158;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.28s ease;
+
+  box-shadow:
+    0 4px 10px rgba(15,23,42,0.04);
+}
+
+.analytics-section .section-btn:hover {
+  transform: translateY(-2px);
+
+  background:
+    rgba(255,255,255,0.92);
+}
+
+/* =======================================================
+   TOP AREA
+======================================================= */
+
+.analytics-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+/* =======================================================
+   INFO
+======================================================= */
+
+.analytics-info h1 {
+  font-size: 58px;
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: -3px;
+
+  color: #111827;
+
+  margin-bottom: 8px;
+}
+
+.analytics-info p {
+  font-size: 15px;
+
+  color: #6b7280;
+
+  font-weight: 500;
+}
+
+/* =======================================================
+   BADGE
+======================================================= */
+
+.analytics-badge {
+  padding: 13px 20px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(211,225,217,0.92),
+      rgba(238,244,240,0.92)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.82);
+
+  color: #5f776a;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 5px 14px rgba(15,23,42,0.04);
+}
+
+/* =======================================================
+   CHART
+======================================================= */
+
+.analytics-chart {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 18px;
+
+  height: 250px;
+
+  padding-top: 6px;
+}
+
+/* =======================================================
+   COLUMN
+======================================================= */
+
+.chart-column {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+}
+
+/* =======================================================
+   VALUE
+======================================================= */
+
+.chart-value {
+  font-size: 12px;
+
+  font-weight: 800;
+
+  color: #5e7268;
+}
+
+/* =======================================================
+   BAR WRAPPER
+======================================================= */
+
+.chart-bar-wrapper {
+  width: 52px;
+
+  height: 180px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(235,241,237,0.48),
+      rgba(214,223,217,0.20)
+    );
+
+  padding: 7px;
+}
+
+/* =======================================================
+   BAR
+======================================================= */
+
+.chart-bar {
+  width: 100%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8ea79a,
+      #6f887c
+    );
+
+  box-shadow:
+    0 8px 18px rgba(111,136,124,0.20);
+
+  position: relative;
+
+  transition: 0.35s ease;
+}
+
+/* =======================================================
+   SHINE
+======================================================= */
+
+.chart-bar::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 45%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.35),
+      transparent
+    );
+}
+
+/* =======================================================
+   HOVER
+======================================================= */
+
+.chart-column:hover .chart-bar {
+  transform:
+    translateY(-4px);
+
+  filter: brightness(1.04);
+}
+
+/* =======================================================
+   DAY
+======================================================= */
+
+.chart-day {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #6b7280;
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width: 900px) {
+
+  .analytics-top {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+
+  .analytics-chart {
+    gap: 10px;
+  }
+
+  .chart-bar-wrapper {
+    width: 40px;
+  }
+
+  .analytics-info h1 {
+    font-size: 48px;
+  }
+}
