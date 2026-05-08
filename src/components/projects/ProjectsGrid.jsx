@@ -1,4 +1,4 @@
-import "../../styles/projects/ProjectsGrid.css";
+import "../../styles/projects/projectsGrid.css";
 
 import ProjectsOverviewCard from "./ProjectsOverviewCard";
 
