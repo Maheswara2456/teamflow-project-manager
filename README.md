@@ -1,16 +1,121 @@
-# React + Vite
+# TeamFlow Project Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo:
+https://teamflow-project-manager-production.up.railway.app/
 
-Currently, two official plugins are available:
+GitHub Repository:
+https://github.com/Maheswara2456/teamflow-project-manager
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TeamFlow Project Manager is a modern full-stack productivity platform built to manage projects, tasks, workflows, and team collaboration efficiently.
 
-## Expanding the ESLint configuration
+The application provides authentication, project tracking, dashboard analytics, task management, and real-time Firebase integration with a clean responsive UI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- User Authentication (Login / Register)
+- Dashboard Analytics
+- Create & Manage Projects
+- Task Tracking System
+- Project Progress Monitoring
+- Role-Based UI Structure
+- Responsive Modern Interface
+- Firebase Realtime Database Integration
+- Railway Deployment
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- CSS3
+- React Router DOM
+- Lucide React Icons
+
+### Backend / Database
+- Firebase Authentication
+- Firebase Firestore Database
+
+### Deployment
+- Railway
+
+---
+
+## Folder Structure
+
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── styles/
+ ├── firebase/
+ └── App.jsx
+```
+
+---
+
+## Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Maheswara2456/teamflow-project-manager.git
+```
+
+### Navigate to Project
+
+```bash
+cd teamflow-project-manager
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file and add:
+
+```env
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
+
+---
+
+## Deployment
+
+Application deployed successfully using Railway.
+
+---
+
+## Author
+
+Maheswara Reddy
+
+---
+
+## Project Status
+
+Completed and deployed successfully.
