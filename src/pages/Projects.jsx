@@ -31,7 +31,7 @@ import Sidebar from "../components/layout/Sidebar";
 
 import Topbar from "../components/layout/Topbar";
 
-import ProjectsTopbar from "../components/projects/ProjectsTopbar";
+import ProjectsTopbar from "../components/projects/projectsTopbar";
 
 import ProjectsFilters from "../components/projects/ProjectsFilters";
 
